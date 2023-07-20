@@ -35,7 +35,7 @@ locals {
   var.ec2_vpc_security_groups)
 }
 
-resource "aws_launch_template" "this" {
+resource "aws_launch_template" "launch_template" {
   name                   = var.ec2_launch_template_name
   image_id               = var.ec2_ami_id != "" ? var.ec2_ami_id : data.aws_ami.ami.id
   instance_type          = var.ec2_instance_type
