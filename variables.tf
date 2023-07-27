@@ -86,18 +86,18 @@ variable "lt_update_default_version" {
 
 variable "lt_cloudinit_content" {
   description = "Cloudinit body content"
-  type = string
-  default = ""
+  type        = string
+  default     = ""
 }
 
 variable "lt_cloudinit_gzip" {
   description = "Specify whether or not to gzip the rendered output (defaults to true). Switch default to false"
-  type = bool
-  default = false
+  type        = bool
+  default     = false
 }
 
 variable "lt_cloudinit_base64_encode" {
   description = "Specify whether or not to gzip the rendered output (defaults to true). Switch default to false"
-  type = bool
-  default = true
+  type        = bool
+  default     = true
 }
